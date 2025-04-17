@@ -224,7 +224,7 @@ public class AWS_Lambda_Simulation {
         List<CloudletExecutionInfo> executionSchedule = new ArrayList<>();
         
         // Initial cloudlets (6 cloudlets at time 0)
-        for (int i = 0; i <= 3; i++) {
+        for (int i = 0; i <= 4; i++) {
             Cloudlet cloudlet = createCloudlet(i, brokerId);
             executionSchedule.add(new CloudletExecutionInfo(cloudlet, 0, i));
         }
